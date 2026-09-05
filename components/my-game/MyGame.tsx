@@ -256,7 +256,7 @@ const MyGameComponent: React.FC<MyGameComponentProps> = ({ game: gameProp }) => 
         title={game.title}
         panel={<MyGameSetupCard {...setupCardProps} placement="hud" />}
       >
-        <GameWindow {...gameWindowShellProps} hudMode hudSolidBackground>
+        <GameWindow {...gameWindowShellProps} hudMode hudSolidBackground disableBuiltInSong>
           {gameWindowContent}
         </GameWindow>
       </GameHud>
