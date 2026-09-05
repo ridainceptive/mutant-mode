@@ -1,0 +1,31 @@
+{
+  "team": "inceptive",
+  "gameName": "mutant-mode",
+  "displayTitle": "MUTANT MODE",
+  "description": "A neon mutant tropical slot with 20 lines, a wild ooze blob, and jackpot crate scatters. Place an APE bet, then spin the 5x4 reels. Three or more matching symbols pay across a line.",
+  "authors": [
+    {
+      "name": "ridainceptive",
+      "telegram": "YOUR_TELEGRAM_USERNAME"
+    }
+  ],
+  "revenueShare": [
+    {
+      "name": "ridainceptive",
+      "telegram": "YOUR_TELEGRAM_USERNAME",
+      "address": "0x0000000000000000000000000000000000000000",
+      "share": 100
+    }
+  ],
+  "status": "pending",
+  "category": "arcade",
+  "tags": ["arcade", "slots", "mutant"],
+  "thumbnail": "/mutant-mode/card.png",
+  "banner": "/mutant-mode/banner.png",
+  "mainComponent": "MyGame.tsx",
+  "windowComponent": "MyGameWindow.tsx",
+  "setupComponent": "MyGameSetupCard.tsx",
+  "configFile": "myGameConfig.ts",
+  "version": "1.0.0",
+  "submittedAt": "2026-09-05"
+}

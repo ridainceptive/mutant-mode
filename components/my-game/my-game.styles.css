@@ -1,0 +1,127 @@
+.mm-stage {
+  position: absolute;
+  inset: 0;
+  container-type: size;
+  display: grid;
+  place-items: center;
+  padding: 4cqmin;
+  overflow: hidden;
+  background:
+    linear-gradient(180deg, rgba(8, 4, 20, 0.35), rgba(6, 2, 16, 0.55)),
+    url("/mutant-mode/background.webp") center / cover no-repeat,
+    #070616;
+}
+
+.mm-slime {
+  position: absolute;
+  top: 0;
+  left: 8%;
+  right: 8%;
+  height: 8cqmin;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 12% 0, #c6ff2a 0 1.4cqmin, transparent 1.5cqmin),
+    radial-gradient(circle at 38% 0, #7cff1f 0 1.8cqmin, transparent 1.9cqmin),
+    radial-gradient(circle at 64% 0, #d8ff4a 0 1.3cqmin, transparent 1.4cqmin),
+    radial-gradient(circle at 86% 0, #c6ff2a 0 1.7cqmin, transparent 1.8cqmin);
+  opacity: 0.85;
+}
+
+.mm-logo {
+  position: absolute;
+  top: 3cqmin;
+  display: flex;
+  align-items: baseline;
+  gap: 1.2cqmin;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.mm-logo-mutant,
+.mm-logo-mode {
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  line-height: 1;
+}
+
+.mm-logo-mutant {
+  font-size: 7cqmin;
+  color: #d4ff3a;
+  text-shadow: 0 0 8px #b6ff20;
+}
+
+.mm-logo-mode {
+  font-size: 5.6cqmin;
+  color: #ff3d98;
+  font-style: italic;
+  text-shadow: 0 0 8px #ff2d8b;
+}
+
+.mm-reels-frame {
+  width: min(92%, 118cqmin);
+  padding: 1.6cqmin;
+  border-radius: 2cqmin;
+  background: rgba(12, 6, 24, 0.55);
+  box-shadow:
+    0 0 0 0.35cqmin #d07cff,
+    0 0 0 0.8cqmin #5b1d8f,
+    0 0 4cqmin rgba(180, 80, 255, 0.4);
+}
+
+.mm-reels {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.8cqmin;
+  height: 62cqmin;
+  overflow: hidden;
+  border-radius: 1.2cqmin;
+  background: #05030d;
+}
+
+.mm-reel {
+  overflow: hidden;
+}
+
+.mm-reel-strip {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8cqmin;
+  will-change: transform;
+}
+
+.mm-reel-strip.is-spinning {
+  transition: transform 1.15s cubic-bezier(0.12, 0.72, 0.18, 1);
+  filter: blur(6px) saturate(1.15);
+}
+
+.mm-symbol {
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  border-radius: 0.8cqmin;
+}
+
+.mm-symbol img {
+  width: 92%;
+  height: 92%;
+  object-fit: contain;
+}
+
+.mm-symbol.is-win {
+  box-shadow: inset 0 0 0 0.25cqmin #c6ff2a, 0 0 2cqmin rgba(180, 255, 40, 0.5);
+}
+
+.mm-win-toast {
+  position: absolute;
+  left: 50%;
+  top: 48%;
+  transform: translate(-50%, -50%);
+  padding: 1.4cqmin 3cqmin;
+  border-radius: 1.2cqmin;
+  border: 0.25cqmin solid #c6ff2a;
+  background: rgba(8, 4, 16, 0.88);
+  color: #c6ff2a;
+  font-size: 4.2cqmin;
+  letter-spacing: 0.08em;
+  pointer-events: none;
+}
